@@ -754,7 +754,7 @@ window.__handleSheet = function(response){
     reportData = parseSheet(response.table);
     if(reportData.students.length){
       renderReport();
-      setStatus(`Informe actualizado correctamente: ${reportData.students.length} estudiantes y ${reportData.activities.length} actividades tomadas de las columnas D a I.`, 'ok');
+      setStatus(`Informe actualizado correctamente: ${reportData.students.length} estudiantes y ${reportData.activities.length} `, 'ok');
       return;
     }
     setStatus('La hoja se pudo leer, pero no se encontraron registros de estudiantes. Revisa los encabezados y el contenido de la primera pestaña.', 'error');
